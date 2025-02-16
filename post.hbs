@@ -12,13 +12,7 @@
             <h1 class="gh-article-title is-title">{{title}}</h1>
 
             {{#if tags}}
-              <ul>
-              {{#foreach tags}}
-                <li>
-                  <a href="{{url}}" title="{{name}}" class="gh-article-tag">{{name}}</a>
-                </li>
-              {{/foreach}}
-              </ul>
+              {{ tags separator=' &#8226; ' }}
             {{/if}}
 
             {{#if custom_excerpt}}
